@@ -34,10 +34,15 @@ createApp({
 
     methods: {
 
-        previousSLide() {
+        previousSlide: function() {
 
-            
+            this.activeSlide -= 1
 
+        },
+
+        nextSlide: function () {
+
+            this.activeSlide += 1
         }
     }
 

@@ -28,11 +28,11 @@
                     <p>{{ image.text }}</p>
                 </div>
 
-                <div id="arrow-left" class="arrows arrow-left">
+                <div id="arrow-left" class="arrows arrow-left" @click = "previousSlide">
                     <i class="fa-solid fa-chevron-left"></i>
                 </div>
 
-                <div id="arrow-right" class="arrows arrow-right">
+                <div id="arrow-right" class="arrows arrow-right" @click="nextSlide">
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
             </div>
