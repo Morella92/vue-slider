@@ -36,13 +36,28 @@ createApp({
 
         previousSlide: function() {
 
-            this.activeSlide -= 1
+            if(this.activeSlide > 0){
+
+                this.activeSlide -= 1
+
+            } else{
+
+                this.activeSlide = this.slides.length - 1
+            }
+            
 
         },
 
         nextSlide: function () {
 
-            this.activeSlide += 1
+            if (this.activeSlide < this.slides.length - 1) {
+
+                this.activeSlide += 1
+            } else {
+        
+                this.activeSlide = 0
+            }
+
         }
     }
 
